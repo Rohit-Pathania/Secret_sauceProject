@@ -16,14 +16,14 @@ pipeline {
             steps {
                 bat '''
                 echo Checking project folder...
-                dir C:\Users\HP\IdeaProjects\SauceDemoProject
+                dir C:\\Users\\HP\\IdeaProjects\\SauceDemoProject
                 '''
             }
         }
 
         stage('Run Tests') {
             steps {
-                dir('C:\Users\HP\IdeaProjects\SauceDemoProject')
+                dir('C:\\Users\\HP\\IdeaProjects\\SauceDemoProject')
                 {
                     bat "mvn clean test -Dbrowser=${params.BROWSER}"
                 }
