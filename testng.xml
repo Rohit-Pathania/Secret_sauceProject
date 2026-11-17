@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/HP/IdeaProjects/SauceDemoProject"><classes><class name="tests.LoginSuccess"><methods><include name="loginSuccessTest"/></methods></class><class name="tests.LoginTest"><methods><include name="validLoginTest"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "https://testng.org">
+<suite name="SauceDemo Test Suite" verbose="2" preserve-order="true">
+    <test name="Login Tests">
+        <classes>
+
+            <class name="tests.LoginSuccessTest">
+                <methods>
+                    <include name="loginSuccessTest"/>
+                </methods>
+            </class>
+            <class name="tests.CartingTest">
+                <methods>
+                    <include name="validCartItemsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

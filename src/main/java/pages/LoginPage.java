@@ -18,14 +18,14 @@ public class LoginPage {
 
 
     //Actions for elements
-    public void enterUserName(){
+    public void enterUserName(String username){
         WebElement usernameElement= driver.findElement(userName_path);
-        usernameElement.sendKeys("standard_user");
+        usernameElement.sendKeys(username);
     }
 
-    public void enterPass(){
+    public void enterPass(String password){
         WebElement passElement= driver.findElement(pass_path);
-        passElement.sendKeys("secret_sauce");
+        passElement.sendKeys(password);
     }
 
     public void clickLogin(){
